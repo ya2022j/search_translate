@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="apple-mobile-web-app-title" content="Kensaku">
+
+ <meta name="keywords" content="日语词典　Japanese dictionary  日本語辞書 일본어 사전">
+    <meta name="description" content="Japanese dictionary for native English speakers 英語を母国語とする人のための日本語辞書 영어 원어민을 위한 일본어 사전">
+    <link rel="stylesheet" media="screen" href="https://assets.jisho.org/assets/application-61d8e80944056be2e8c772e3d3b243767cc3550ca5b7da4d62ba58a5604fc3c3.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/owl_1f989.png" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9990645318656892"     crossorigin="anonymous"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+
+<body>
+	
+	<div id=app>
+		<input type="text"   @input="doinput">
+		<div>kw:{{kw}}</div>
+		
+	</div>
+<script>
+new Vue({
+	el:"#app",
+	data() {
+		return {
+			kw:""
+		}
+	},
+	
+	methods:{
+		doinput(e){
+
+			this.kw = "http:127.0.0.1:5000/" +e.target.value
+			console.log(this.kw)
+		}
+	},
+})
+</script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="apple-mobile-web-app-title" content="Kensaku">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+ <meta name="keywords" content="日语词典　Japanese dictionary  日本語辞書 일본어 사전">
+    <meta name="description" content="Japanese dictionary for native English speakers 英語を母国語とする人のための日本語辞書 영어 원어민을 위한 일본어 사전">
+    <link rel="stylesheet" media="screen" href="https://assets.jisho.org/assets/application-61d8e80944056be2e8c772e3d3b243767cc3550ca5b7da4d62ba58a5604fc3c3.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/owl_1f989.png" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9990645318656892"     crossorigin="anonymous"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+
+<style>
+
+	.overlay{
+		display: flex;
+		flex-direction: column;
+	}
+	.search_main{
+		align-self: center;
+
+	}
+   .toplogo_parent{
+      display: flex;
+      flex-direction: column;
+   }
+   .toplogo_sub{
+      align-self: center;
+   }
+   .fronter_result{
+      display: flex;
+      flex-direction: column;
+   }
+   .search_result{
+      align-self: center;
+   }
+   .words_format   {	width: 100px;
+	       padding-bottom: 0px;
+	       border-bottom: 2px solid #ff5252;
+   }
+   .words_meanings{
+      border-width:10px;
+border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; -o-border-radius: 20px;
+   background-color: #f0f2f5;
+
+
+
+   }
+   .example_translate{
+	   font-size: 15px;
+	   color:darkgray;
+   }
+   div rt  {
+	   color: #ff5252;
+font-weight:bold;
+
+   }
+
+
+</style>
+
+  </head>
+
+<header class="row collapse" >
+
+<div class="toplogo_parent">
+  <br><br><br><br><br><br><br><br>
+
+
+   <div class="toplogo_sub">
+       <a href="http://ja2ko.itbenkyou.com/">
+           <img height="680px" width="680px" src="https://images2.imgbox.com/15/77/qCD1rJGT_o.png" >
+       </a>
+
+    </div>
+
+
+</div>
+
+
+
+</header>
+
+<body>
+
+
+    <div class="row collapse">
+      <div class="large-12 columns">
+        <form class="search" data-live="false" id="search" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />  <div id="input_methods" class="input_methods">
+
+
+
+
+
+
+  </div>
+
+<!--      搜索框    overlay-->
+  <div class="overlay" >
+    <div id="search_main" class="main" style="width:88%;">
+<div class="fronter_inner">
+    <div class="inner">
+
+        <button type="submit" class="submit icon" tabindex="2">
+
+
+ <img  width="25px" height="25px" src="https://icons.veryicon.com/png/o/miscellaneous/facet-icon-5/search-grey-1.png">
+
+        </button>
+        <a class="search-form_clear-button_js search-form_clear-button icon" accesskey="1" tabindex="3">
+         </a>
+
+        <div class="text_input">
+          <div class="hidden range" style="font-size: 22px; font-weight: 400; display: none;"></div>
+          <input type="text"  class="keyword japanese_gothic" name="keyword" id="keyword" value="" tabindex="1" lang="ja" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Japanese,日本語を入力してください" data-autoload="true" data-effective-keyword="actual" @input="doinput">
+		  
+        </div>
+      </div>
+</div>
+    </div></div></form></div></div>
+
+
+
+
+
+</body>
+
+
+</html>
